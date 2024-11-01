@@ -1,16 +1,142 @@
-/* Ignorar por agora, estava apenas testando algumas aplicações futuras para o menu
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.header-background {
+  height: 100vh;
+  background: linear-gradient(180deg, #06121E 0%, rgba(6, 18, 30, 0.37) 36.74%, rgba(6, 18, 30, 0.29) 69.61%, #06121E 100%), url(./sources/images/background-header.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Desktop Menu */
 #menu {
-  max-width: 1280px;
+  max-width: 1440px;
   width: 100%;
   margin: auto;
 
   & #menu-items {
     width: 100%;
+    padding: 42px 36px;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    & .menu-left-item {
+      transition: transform 0.3s ease;
+      display: flex;
+
+      & a {
+        display: inline-block;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: transform 0.3s ease, outline 0.2s ease, box-shadow 0.2s ease;
+      }
+    }
+
+    & .menu-left-item:hover {
+      transform: scale(1.1);
+    }
+
+    & a:focus,
+    & a:hover {
+      border-radius: 8px;
+      transform: scale(1.1);
+    }
+
+    & a:focus {
+      outline: 1px solid #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
 
     & .menu-right-item {
       margin-left: auto;
+
+      & button {
+        padding: 10px 20px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 16px;
+        border: 1.4px solid #BCBCBC;
+        border-radius: 4px;
+
+        transition: background-color 0.2s;
+      }
+
+      & button:hover,
+      & button:focus {
+        background-color: #c53b34;
+      }
     }
   }
 }
-*/
+
+/* Section Hero */
+#hero {
+  max-width: 1440px;
+  padding-inline: 20px;
+  margin: auto;
+  margin-top: -50px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  & .logo-breck {
+    max-width: 300px;
+  }
+
+  & h1 {
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    
+    display: flex;
+    flex-direction: column;
+
+    & span {
+      font-size: 36px;
+    }
+  }
+
+  & p {
+    margin-top: 30px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  & button {
+    margin-top: 60px;
+    padding: 15px 50px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #D94140;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  & button:hover {
+    background-color: #c53b34;
+    transform: scale(1.05);
+  }
+
+  & button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(217, 65, 64, 0.5);
+    transform: scale(1.05);
+  }
+}
