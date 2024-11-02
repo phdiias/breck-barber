@@ -38,7 +38,8 @@ i {
   padding: 42px 36px;
 }
 
-.menu-itens a:hover i {
+.menu-itens a:hover i,
+.menu-itens a:focus i {
   animation: translateY 0.8s infinite alternate;
   color: #c53b34;
 }
@@ -51,18 +52,17 @@ i {
     transform: translateY(-8px) scale(1.1);
   }
 }
-.menu-right-item {
+.menu-right-item .btn-schedule-time {
+  color: #fff3ff;
   margin: 16px;
   padding: 8px 24px;
   font-weight: 600;
   font-size: 16px;
   border: 1.4px solid #fff3ff;
   border-radius: 4px;
+  display: inline-block;
 }
-.menu-right-item .btn-schedule-time {
-  color: #fff3ff;
-}
-.menu-right-item:hover {
+.menu-right-item .btn-schedule-time:hover, .menu-right-item .btn-schedule-time:focus {
   background-color: #c53b34;
   transition: background 0.8s;
   animation: translateY 0.8s infinite alternate;

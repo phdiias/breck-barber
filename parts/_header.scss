@@ -1,59 +1,59 @@
 // Desktop Menu
 header {
-    width: 100%;
+  width: 100%;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 i {
-    color: $colorText;
+  color: $colorText;
 }
 
 .menu-itens {
-    display: flex;
-    gap: 14px;
-    padding: 42px 36px;
-
+  display: flex;
+  gap: 14px;
+  padding: 42px 36px;
 }
 
-.menu-itens a:hover {
-    i {
-        animation: translateY 0.8s infinite alternate;
-        color: $colorButoon;
-    }
+.menu-itens a:hover,
+.menu-itens a:focus {
+  i {
+    animation: translateY 0.8s infinite alternate;
+    color: $colorButoon;
+  }
 }
 
 //Animacao dos icones da esquerda
 @keyframes translateY {
-    from {
-        transform: translateY(0) scale(1);
-    }
+  from {
+    transform: translateY(0) scale(1);
+  }
 
-    to {
-        transform: translateY(-8px) scale(1.1);
-    }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
 }
 
 .menu-right-item {
+  .btn-schedule-time {
+    color: $colorText;
     margin: 16px;
     padding: 8px 24px;
     font-weight: 600;
     font-size: 16px;
     border: 1.4px solid $colorText;
     border-radius: 4px;
+    display: inline-block;
 
-    .btn-schedule-time {
-        color: $colorText;
-        
+    &:hover,
+    &:focus {
+      background-color: $colorButoon;
+      transition: background 0.8s;
+      animation: translateY 0.8s infinite alternate;
     }
-
-    &:hover{
-        background-color: $colorButoon ;
-        transition: background 0.8s;
-        animation: translateY 0.8s infinite alternate;
-    }
+  }
 }

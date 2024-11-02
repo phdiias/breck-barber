@@ -1,0 +1,41 @@
+.img-home {
+  position: relative;
+}
+
+.img-home::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgb(3, 3, 3), #ffffff05),
+    url(../sources/images/background-header.jpeg);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+#about-us {
+  width: 100%;
+  padding: 32px;
+  margin: 32px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .about-us-images {
+    width: 50%;
+  }
+
+  .about-us-texts {
+    justify-items: center;
+
+    h2 {
+      font-size: 32px;
+      padding: 24px;
+    }
+  }
+}
