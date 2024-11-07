@@ -27,7 +27,7 @@ i {
   }
 }
 
-//Animacao dos icones da esquerda
+// Animação dos ícones
 @keyframes translateY {
   from {
     transform: translateY(0) scale(1);
@@ -52,7 +52,6 @@ i {
     &:hover,
     &:focus {
       background-color: $colorButoon;
-      transition: background 0.8s;
       animation: translateY 0.8s infinite alternate;
     }
   }
