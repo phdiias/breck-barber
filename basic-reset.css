@@ -13,4 +13,9 @@
     display: inline-block;
     cursor: pointer;
   }
+
+  & iframe {
+    display: block;
+    border: none;
+  }
 }
