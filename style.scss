@@ -77,8 +77,6 @@ body {
     font-size: 24px;
     font-weight: 700;
     background-color: $colorButoon;
-
-    transition: background-color 0.2s ease, transform 0.2s ease;
   }
 
   & button:hover {
@@ -87,7 +85,7 @@ body {
 
   & button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(217, 65, 64, 0.5);
-    transform: scale(1.05);
+    background-color: $colorButoon;
+    animation: translateY 0.8s infinite alternate;
   }
 }
