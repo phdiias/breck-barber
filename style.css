@@ -64,7 +64,6 @@ i {
 }
 .menu-right-item .btn-schedule-time:hover, .menu-right-item .btn-schedule-time:focus {
   background-color: #c53b34;
-  transition: background 0.8s;
   animation: translateY 0.8s infinite alternate;
 }
 
@@ -88,7 +87,6 @@ i {
 }
 
 #about-us {
-  width: 100%;
   padding: 32px;
   margin: 32px;
   gap: 24px;
@@ -144,6 +142,46 @@ i {
   color: #000;
 }
 
+#barber-location {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+#barber-location h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+#barber-location .map-location {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  width: 100%;
+  background-color: #06121E;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer-icons {
+  display: flex;
+  gap: 16px;
+}
+footer .footer-icons a i:hover, footer .footer-icons a i:focus {
+  animation: translateY 0.8s infinite alternate;
+  color: #c53b34;
+}
+footer .footer-copyright {
+  color: #fff3ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
@@ -189,13 +227,12 @@ body {
   font-size: 24px;
   font-weight: 700;
   background-color: #c53b34;
-  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 #hero button:hover {
   animation: translateY 0.8s infinite alternate;
 }
 #hero button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(217, 65, 64, 0.5);
-  transform: scale(1.05);
+  background-color: #c53b34;
+  animation: translateY 0.8s infinite alternate;
 }/*# sourceMappingURL=style.css.map */
