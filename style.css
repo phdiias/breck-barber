@@ -94,14 +94,20 @@ i {
   justify-content: space-between;
 }
 #about-us .about-us-images {
-  width: 50%;
+  margin: 0 6rem;
 }
 #about-us .about-us-texts {
   justify-items: center;
 }
 #about-us .about-us-texts h2 {
   font-size: 32px;
-  padding: 24px;
+  margin-top: 8rem;
+}
+
+#about-us .about-us-texts p {
+  width: 60rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 #professionals {
