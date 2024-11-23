@@ -94,20 +94,14 @@ i {
   justify-content: space-between;
 }
 #about-us .about-us-images {
-  margin: 0 6rem;
+  width: 50%;
 }
 #about-us .about-us-texts {
   justify-items: center;
 }
 #about-us .about-us-texts h2 {
   font-size: 32px;
-  margin-top: 8rem;
-}
-
-#about-us .about-us-texts p {
-  width: 60rem;
-  text-align: center;
-  padding: 2rem;
+  padding: 24px;
 }
 
 #professionals {
@@ -148,6 +142,102 @@ i {
   color: #000;
 }
 
+#services {
+  max-width: 1188px;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#services .services-title {
+  margin-bottom: 24px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #06121E;
+}
+#services .services-desc {
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 800px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #323232;
+}
+#services .swiper-slide {
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+#services .swiper-slide .service-card-img {
+  width: 100%;
+  height: 300px;
+}
+#services .swiper-slide .service-card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#services .swiper-slide .service-card-texts {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 14px;
+  border-radius: 0px 0px 16px 16px;
+}
+#services .swiper-slide .service-card-texts .service-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+#services .swiper-slide .service-card-texts .service-button {
+  background-color: #D94140;
+  padding: 6px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 700;
+}
+#services .swiper-slide .service-card-texts .service-button:hover, #services .swiper-slide .service-card-texts .service-button:focus {
+  animation: translateY 0.8s infinite alternate;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #D94140;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.02);
+  opacity: 0.6;
+}
+
+.swiper-button-prev::after {
+  content: "\f053";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper-button-next::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
 #barber-location {
   width: 100%;
   margin: auto;
@@ -177,7 +267,7 @@ footer .footer-icons {
   display: flex;
   gap: 16px;
 }
-footer .footer-icons a i:hover, footer .footer-icons a i:focus {
+footer .footer-icons a:hover i, footer .footer-icons a:focus i {
   animation: translateY 0.8s infinite alternate;
   color: #c53b34;
 }

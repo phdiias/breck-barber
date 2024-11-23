@@ -88,7 +88,113 @@
 
 }
 
-// Localização da barbearia
+// Sessão Serviços
+#services {
+  max-width: 1188px;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  .services-title {
+    margin-bottom: 24px;
+    font-size: 44px;
+    font-weight: 700;
+    color: $colorServiceTitle;
+  }
+
+  .services-desc {
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 800px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: $colorServiceDescript;
+  }
+
+  .swiper-slide {
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+    .service-card-img {
+      width: 100%;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .service-card-texts {
+      width: 100%;
+      height: auto;
+      background-color: $colorBgServiceCardTexts;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 14px;
+      border-radius: 0px 0px 16px 16px;
+
+      .service-name {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .service-button {
+        background-color: $colorBgServiceCardButton;
+        padding: 6px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #FFF;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+          animation: translateY 0.8s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #D94140;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.02);
+  opacity: 0.6;
+}
+
+.swiper-button-prev::after {
+  content: '\f053';
+  font-family: 'Font Awesome 5 free';
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper-button-next::after {
+  content: '\f054';
+  font-family: 'Font Awesome 5 free';
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+// Sessão localização da barbearia
 #barber-location {
   width: 100%;
   margin: auto;
@@ -123,9 +229,9 @@ footer {
     gap: 16px;
 
     a {
-      i {
-        &:hover,
-        &:focus {
+      &:hover,
+      &:focus {
+        i {
           animation: translateY 0.8s infinite alternate;
           color: $colorButoon;
         }
