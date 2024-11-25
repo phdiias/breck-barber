@@ -211,27 +211,7 @@ i {
 
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: #D94140;
-  width: 25px;
-  height: 25px;
-  color: #fff;
-  border-radius: 100%;
-  box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.02);
-  opacity: 0.6;
-}
-
-.swiper-button-prev::after {
-  content: "\f053";
-  font-family: "Font Awesome 5 free";
-  font-weight: 900;
-  font-size: 14px;
-}
-
-.swiper-button-next::after {
-  content: "\f054";
-  font-family: "Font Awesome 5 free";
-  font-weight: 900;
-  font-size: 14px;
+  display: none;
 }
 
 .swiper-wrapper {
