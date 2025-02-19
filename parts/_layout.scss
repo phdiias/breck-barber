@@ -88,12 +88,97 @@
 
 }
 
-// Localização da barbearia
+// Sessão Serviços
+#services {
+  max-width: 1188px;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  .services-title {
+    margin-bottom: 24px;
+    font-size: 44px;
+    font-weight: 700;
+    color: $colorServiceTitle;
+  }
+
+  .services-desc {
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 800px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: $colorServiceDescript;
+  }
+
+  .swiper-slide {
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+    .service-card-img {
+      width: 100%;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .service-card-texts {
+      width: 100%;
+      height: auto;
+      background-color: $colorBgServiceCardTexts;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 14px;
+      border-radius: 0px 0px 16px 16px;
+
+      .service-name {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .service-button {
+        background-color: $colorBgServiceCardButton;
+        padding: 6px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #FFF;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+          animation: translateY 0.8s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+// Sessão localização da barbearia
 #barber-location {
   width: 100%;
   margin: auto;
   text-align: center;
-
 
   h2 {
     font-size: 34px;
@@ -123,9 +208,9 @@ footer {
     gap: 16px;
 
     a {
-      i {
-        &:hover,
-        &:focus {
+      &:hover,
+      &:focus {
+        i {
           animation: translateY 0.8s infinite alternate;
           color: $colorButoon;
         }
