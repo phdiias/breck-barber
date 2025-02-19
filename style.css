@@ -29,7 +29,7 @@ header {
 }
 
 i {
-  color: #fff3ff;
+  color: #ffffff;
 }
 
 .menu-itens {
@@ -38,33 +38,15 @@ i {
   padding: 42px 36px;
 }
 
-.menu-itens a:hover i,
-.menu-itens a:focus i {
-  animation: translateY 0.8s infinite alternate;
-  color: #c53b34;
+.menu-itens a i {
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-@keyframes translateY {
-  from {
-    transform: translateY(0) scale(1);
-  }
-  to {
-    transform: translateY(-8px) scale(1.1);
-  }
-}
-.menu-right-item .btn-schedule-time {
-  color: #fff3ff;
-  margin: 16px;
-  padding: 8px 24px;
-  font-weight: 600;
-  font-size: 16px;
-  border: 1.4px solid #fff3ff;
-  border-radius: 4px;
-  display: inline-block;
-}
-.menu-right-item .btn-schedule-time:hover, .menu-right-item .btn-schedule-time:focus {
-  background-color: #c53b34;
-  animation: translateY 0.8s infinite alternate;
+.menu-itens a:hover i,
+.menu-itens a:focus i {
+  transform: translateY(-5px) scale(1.2);
+  color: #CDB490;
 }
 
 .img-home {
@@ -75,7 +57,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgb(3, 3, 3), rgba(255, 255, 255, 0.0196078431)), url(../sources/images/background-header.jpeg);
+  background-color: #000000 ;
   left: 0;
   top: 0;
   width: 100%;
@@ -93,11 +75,16 @@ i {
   display: flex;
   justify-content: space-between;
 }
+
 #about-us .about-us-images {
   margin: 0 6rem;
+  overflow: hidden;
+  border-radius: 20px;
 }
 #about-us .about-us-texts {
   justify-items: center;
+  border-radius: 50px; 
+  color: rgb(0, 0, 0);
 }
 #about-us .about-us-texts h2 {
   font-size: 32px;
@@ -105,62 +92,87 @@ i {
 }
 
 #about-us .about-us-texts p {
+  font-size: 18px;
   width: 60rem;
   text-align: center;
   padding: 2rem;
 }
 
 #professionals {
-  width: 100%;
-  height: 400px;
-  background-color: #c53b34;
-}
-#professionals h2 {
-  padding: 16px;
-  margin: 16px;
+  padding: 60px 20px;
+  background-color: #ffffff;
   text-align: center;
 }
-#professionals .carrossel {
-  display: flex;
-  justify-content: space-around;
+
+#professionals h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1c1c1c;
 }
-#professionals .card {
-  position: relative;
-  width: 11.875em;
-  height: 16.5em;
-  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 120ms;
+
+.team-cards {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: #fff;
-  padding: 0.5em;
-  padding-bottom: 3.4em;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-#professionals .card .title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  position: absolute;
-  left: 0.625em;
-  bottom: 1.875em;
-  font-weight: 400;
-  color: #000;
+
+.team-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #1c1c1c;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 15px 20px;
 }
 
 #barber-location {
-  width: 100%;
-  margin: auto;
+  padding: 60px 20px;
+  background-color: #f1f1f1;
   text-align: center;
 }
+
 #barber-location h2 {
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 48px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1c1c1c;
 }
-#barber-location .map-location {
+
+#barber-location p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.map-location {
   width: 100%;
   height: 400px;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -173,14 +185,28 @@ footer {
   align-items: center;
   gap: 20px;
 }
+
 footer .footer-icons {
   display: flex;
   gap: 16px;
 }
+
 footer .footer-icons a i:hover, footer .footer-icons a i:focus {
-  animation: translateY 0.8s infinite alternate;
-  color: #c53b34;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color:#CDB490;
 }
+
+.menu-itens a i {
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer .footer-icons a:hover i,
+footer .footer-icons a:focus i {
+  transform: translateY(-5px) scale(1.2); 
+  color: #CDB490; 
+}
+
 footer .footer-copyright {
   color: #fff3ff;
   font-size: 16px;
@@ -206,39 +232,197 @@ body {
   text-align: center;
   align-items: center;
 }
+
 #hero .logo-breck {
   max-width: 300px;
+  margin-top: -3rem;
 }
+
 #hero h1 {
   margin-top: 20px;
-  color: #fff3ff;
+  color: #ffffff;
   font-size: 48px;
   font-weight: 700;
   display: flex;
   flex-direction: column;
 }
+
 #hero h1 span {
   font-size: 36px;
 }
+
 #hero p {
   margin-top: 30px;
-  color: #fff3ff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
 }
+
 #hero button {
   margin-top: 60px;
   padding: 15px 50px;
-  color: #fff3ff;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 700;
-  background-color: #c53b34;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
 #hero button:hover {
-  animation: translateY 0.8s infinite alternate;
+  background-color:#CDB490;
+  color: rgb(0, 0, 0);
+  transform: scale(1.1); 
 }
-#hero button:focus {
-  outline: none;
-  background-color: #c53b34;
-  animation: translateY 0.8s infinite alternate;
-}/*# sourceMappingURL=style.css.map */
+
+#hero button:active {
+  transform: scale(1.05);
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.team-card {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.team-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about-us .about-us-images {
+    margin: 0;
+    width: 100%;
+    border-radius: 50px
+  }
+
+  #about-us .about-us-texts h2 {
+    font-size: 28px;
+    margin-top: 4rem;
+  }
+
+  #about-us .about-us-texts p {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #professionals .carrossel {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #professionals .card {
+    width: 80%;
+    height: auto;
+    padding-bottom: 2em;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero h1 span {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  #hero button {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-us .about-us-texts h2 {
+    font-size: 24px;
+    margin-top: 2rem;
+  }
+
+  #about-us .about-us-images{
+    border-radius: 30px
+  }
+
+  #about-us .about-us-texts p {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero h1 span {
+    font-size: 20px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+
+  #hero button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  footer .footer-copyright {
+    font-size: 14px;
+  }
+}

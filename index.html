@@ -13,8 +13,10 @@
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="img/png" sizes="128x128" href="sources/images/logo-breck.png">
 </head>
-
 <body>
   <div class="img-home">
     <header class="header-background">
@@ -27,109 +29,66 @@
             <i class="fa-brands fa-tiktok fa-2x"></i>
           </a>
         </div>
-        <div class="menu-right-item">
-          <a class="btn-schedule-time" href="#">Agendar horário</a>
-        </div>
       </nav>
     </header>
     <section id="hero">
-      <img class="logo-breck" src="./sources/images/logo-breck.png" alt="" class="hero-logo" />
-      <h1><span>A ESSÊNCIA DA</span> SUA IDENTIDADE</h1>
-      <p>Horário de funcionamento: 09:00 ás 19:00</p>
+      <img class="logo-breck" src="./sources/images/logo-breck.png" alt="Logo da Barbearia Breck" class="hero-logo" />
+      <h1>A ESSÊNCIA DA SUA <span id="identidade">IDENTIDADE</span></h1>
+      <p>Horário de funcionamento: 09:00 ás 20:30</p>
       <button>Agendar horário</button>
     </section>
   </div>
 
   <main>
-    <section id="about-us">
+    <section id="about-us" data-aos="fade-up" data-aos-duration="3000">
+      <div class="about-us-texts">
+        <h2>SOBRE</h2>
+        <p>
+          A <strong>Breck Barbearia</strong> é muito mais do que um lugar para cortar o cabelo. É um espaço pensado para você que valoriza estilo, autenticidade e qualidade. Localizada em <strong>Tijucas - SC</strong>, somos a referência que você procurava para realçar sua identidade e elevar seu visual. Com uma equipe dedicada e altamente capacitada, nossa missão é proporcionar uma experiência única, onde cada cliente se sinta valorizado e saia renovado. Aqui, cada corte é pensado nos mínimos detalhes, sempre atento às últimas tendências e à essência de cada um dos nossos clientes. Agende seu horário e venha conhecer o ambiente moderno e acolhedor da Breck!
+        </p>
+      </div>
       <div class="about-us-images">
         <video width="300" controls loop autoplay muted>
           <source src="/sources/images/Snapinsta.app_video_504AEF8D8176A130D13A0612DF74E5AA_video_dashinit.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="about-us-texts">
-        <h2>SOBRE</h2>
-        <p>
-          A Barbearia Breck é muito mais do que um lugar para cortar o cabelo é um espaço pensado para homens que valorizam estilo, autenticidade e qualidade. Localizada em Tijucas - SC, somos a referência que você procurava para realçar sua identidade e elevar seu visual. Com uma equipe dedicada e altamente capacitada, nossa missão é proporcionar uma experiência única, onde cada cliente se sinta valorizado e saia renovado. Aqui, cada corte é pensado nos mínimos detalhes, sempre atento às últimas tendências e à essência de cada um dos nossos clientes. Agende seu horário e venha conhecer o ambiente moderno e acolhedor da Breck!
-        </p>
-      </div>
-    </section>  
+    </section>
 
     <section id="professionals">
-      <h2>EQUIPE</h2> 
-
-      <div class="carrossel">
-        <div class="card">
-          <!-- <img src="./sources/images/barbeiro-gustavo.jpg"/> -->
-          <span class="title">@guBreck</span>
-          <a href="#">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
+      <h2>Equipe</h2>
+      <div class="container">
+      <div class="team-cards">
+        <div class="team-card" data-aos="fade-up" data-aos-duration="1000">
+          <img src="/sources/images/475761096_601412232506619_5850623762207941433_n.jpg"alt="edvan">
+          <h3>João Silva</h3>
+          <p>Especialista em cortes clássicos e modernos.</p>
         </div>
-  
-        <div class="card">
-          <!-- <img src="./sources/images/barbeiro-gustavo.jpg"/> -->
-          <span class="title">@guBreck</span>
-          <a href="#">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
+        <div class="team-card" data-aos="fade-up" data-aos-duration="1500">
+          <img src="/sources/images/475761096_601412232506619_5850623762207941433_n.jpg"alt="edvan">
+          <h3>Edvan</h3>
+          <p>Mestre em barbas e cuidados com a pele.</p>
         </div>
-  
-        <div class="card">
-          <!-- <img src="./sources/images/barbeiro-gustavo.jpg"/> -->
-          <span class="title">@guBreck</span>
-          <a href="#">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
+        <div class="team-card" data-aos="fade-up" data-aos-duration="2000">
+          <img src="/sources/images/475761096_601412232506619_5850623762207941433_n.jpg"alt="edvan">
+          <h3>Pedro Alves</h3>
+          <p>Expert em coloração e tratamentos capilares.</p>
         </div>
-  
-        <div class="card">
-          <!-- <img src="./sources/images/barbeiro-gustavo.jpg"/> -->
-          <span class="title">@guBreck</span>
-          <a href="#">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
+        <div class="team-card swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+          <img src="/sources/images/475761096_601412232506619_5850623762207941433_n.jpg"alt="edvan">
+          <h3>Edvan</h3>
+          <p>Mestre em barbas e cuidados com a pele.</p>
         </div>
       </div>
-     
+    </div>
+  </div>   
+    </section>
 
-    </section>
-    <section id="services">
-      <h2>Serviços</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin
-        risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non
-        duis augue eros mattis a quis sem sodales.
-      </p>
-      <div class="services-cards">
-        <div class="service-card">
-          <img class="service-img" src="" alt="" />
-          <div class="service-texts">
-            <span class="service-name">Corte cabelo</span>
-            <button class="service-button">R$ 45,00</button>
-          </div>
-        </div>
-        <div class="service-card">
-          <img class="service-img" src="" alt="" />
-          <div class="service-texts">
-            <span class="service-name">Barba completa</span>
-            <button class="service-button">R$ 35,00</button>
-          </div>
-        </div>
-        <div class="service-card">
-          <img class="service-img" src="" alt="" />
-          <div class="service-texts">
-            <span class="service-name">Cabelo e barba</span>
-            <button class="service-button">R$ 70,00</button>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="barber-location">
       <h2>Venha conhecer</h2>
-      <iframe class="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14629.615512102107!2d-46.6812928!3d-23.5539339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5825daacb07f%3A0xcfdec9e87c999ece!2sMuseu%20do%20Futebol!5e0!3m2!1spt-BR!2sbr!4v1730960553220!5m2!1spt-BR!2sbr"></iframe>
+      <iframe class="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.70209499690074!2d-48.649333789944656!3d-27.243204588254475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8ab64239f6917%3A0x80aa2c062ccf2090!2sBreck!5e0!3m2!1spt-BR!2sbr!4v1733943739280!5m2!1spt-BR!2sbr"></iframe>
     </section>
   </main>
+
   <footer>
     <div class="footer-icons">
       <a href="#">
@@ -143,6 +102,12 @@
       Copyright© 2024 | Barbearia Breck - Todos os direitos reservados.
     </p>
   </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
